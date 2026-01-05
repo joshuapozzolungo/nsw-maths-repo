@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
 body {
-  background-color: #7aa2f7;
+  background-color: lab(2.75381% 0 0);
 }
+
+@utility text-primary-text {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+.text-primary-text:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
