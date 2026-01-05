@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "./components/navbar.jsx";
 import MobileMenu from "./components/mobile-menu.jsx";
+import Hero from "./components/hero.jsx";
 import "./App.css";
 
-function App() {
+export default function App() {
+  
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const toggleMobileMenu = () => setMobileMenuOpen(!isMobileMenuOpen);
+
   return (
     <div>
-      <NavBar />
-      <MobileMenu />
+      <NavBar toggleMobileMenu={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen}/>
+      <MobileMenu isMobileMenuOpen={isMobileMenuOpen}/>
+      <Hero/>
     </div>
   );
 }
 
-export default App;
+
