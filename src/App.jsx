@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import NavBar from "./components/navbar.jsx";
 import MobileMenu from "./components/mobile-menu.jsx";
 import Hero from "./components/hero.jsx";
+import Questions from "./components/questions.jsx";
 import "./App.css";
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
       <NavBar toggleMobileMenu={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen}/>
       <MobileMenu isMobileMenuOpen={isMobileMenuOpen}/>
       <Hero/>
+      <Questions/>
     </div>
   );
 }
