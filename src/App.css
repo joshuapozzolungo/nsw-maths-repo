@@ -1,19 +1,45 @@
 @import "tailwindcss";
 
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* Dark Mode - Manual (via .dark class) or Auto (via Media Query) */
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+  }
+}
+
+.dark {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+}
+
+/* Apply to the body */
 body {
-  background-color: lab(2.75381% 0 0);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @utility text-primary-text {
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  color: white;
+  color: var(--text-color);
   font-weight: normal;
-  opacity: 0.8;
 }
 
-.text-primary-text:hover {
-  opacity: 1;
-  cursor: pointer;
+@utility button-primary-button {
+  font-familt: "Inter", sans-serif;
+  font-size:16px;
+  color: var(--bg-color);
+  background-color: var(--text-color);
+  font-weight: bold;
 }
 
+@theme {
+  --color-secondary-box: #181818;
+} 
