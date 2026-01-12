@@ -24,10 +24,24 @@ body {
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+@utility nav-primary-text {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
 
 @utility text-primary-text {
   font-family: "Inter", sans-serif;
   font-size: 16px;
+  color: var(--text-color);
+  font-weight: normal;
+}
+
+@utility text-drop-down-text {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
   color: var(--text-color);
   font-weight: normal;
 }
@@ -41,5 +55,5 @@ body {
 }
 
 @theme {
-  --color-secondary-box: #181818;
+  --color-secondary-box: #101010;
 } 

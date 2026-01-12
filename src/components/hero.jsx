@@ -1,9 +1,44 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 export default function Hero() {
+
+  const calculatorRef = useRef(null);
+  const calculatorInstance = useRef(null);
+  
+  // Logic for Desmos Calculator API
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+    if (window.Desmos && calculatorRef.current && !calculatorInstance.current) {
+      calculatorInstance.current = window.Desmos.GraphingCalculator(calculatorRef.current, {
+        invertedColors: mediaQuery.matches,
+        border: false
+      });
+    }
+    
+    const handleThemeChange = (e) => {
+      if (calculatorInstance.current) {
+        calculatorInstance.current.updateSettings({
+          invertedColors: e.matches
+        });
+      }
+    };
+
+    mediaQuery.addEventListener('change', handleThemeChange);
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleThemeChange);
+      if (calculatorInstance.current) {
+        calculatorInstance.current.destroy();
+        calculatorInstance.current = null;
+      }
+    };
+
+  }, []);
+
   return (
-    <div className="mx-auto max-w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 mt-45">
-      <div className="max-w-4xl">
+    <div className="flex justify-center align-items-center mx-auto max-w-full max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mt-45">
         <div className="flex text-primary-text space-x-7 mb-6 opacity-60">
           <div className="max-w-md">
             <div className="flex">
@@ -32,7 +67,7 @@ export default function Hero() {
           <button className="p-3 button-primary-button rounded-xl hover:opacity-80 cursor-pointer"> Get Cracked </button>
         </div>
       </div>
-
+      <div className="mt-37" ref={calculatorRef} style={{width: "600px", height: "400px"}}></div>
     </div>
   
   );
