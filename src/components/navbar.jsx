@@ -24,8 +24,6 @@ export default function NavBar({ toggleMobileMenu, isMobileMenuOpen }) {
       <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 flex min-h-16 justify-between items-center rounded-full">
         <a className="normal-text flex items-center gap-2 font-semibold text-text-primary duration-300 ease-in-out hover:opacity-80 text-[25px] cursor-pointer">HSC Maths Hub</a>
         <nav className="hidden nav-primary-text ml-auto items-center gap-3 lg:flex font-bold" aria-label="main-navigation">
-          <a className="p-2 cursor-pointer hover:underline">CONTRIBUTE</a>
-          <a className="p-2 cursor-pointer hover:underline">PRICING</a>
           <div className="">
             <div className="flex justify-center items-center">
               <button 
@@ -34,7 +32,7 @@ export default function NavBar({ toggleMobileMenu, isMobileMenuOpen }) {
               </button>
               <ChevronDown className={`transition-transform duration-300 ${isClicked ? 'rotate-180' : 'rotate-0'}`}/>
             </div>
-            <div className={`${isClicked ? '' : 'hidden'} absolute mt-3 p-2 grid grid-cols-2 h-70 w-135 border-1 border-white/20 rounded-lg`}>
+            <div className={`${isClicked ? '' : 'hidden'} absolute bg-black mt-3 p-2 grid grid-cols-2 h-70 w-135 border-1 border-white/20 rounded-lg`}>
               <DropDownMenuItem heading="QUESTIONS" description="Quality Exam Questions"/>
               <DropDownMenuItem heading="EXERCISE" description="Quality Exam Questions"/>
               <DropDownMenuItem heading="VIDEOS" description="Quality Exam Questions"/>
@@ -42,11 +40,13 @@ export default function NavBar({ toggleMobileMenu, isMobileMenuOpen }) {
               <DropDownMenuItem heading="TUTORING" description="Quality Exam Questions"/>
             </div>
           </div>
+          <a className="p-2 cursor-pointer hover:underline">CONTRIBUTE</a>
+          <a className="p-2 cursor-pointer hover:underline">PRICING</a>
           <a className="p-2 cursor-pointer hover:underline">LEADERBOARD</a>
         </nav>
         <div className="flex items-center gap-3">
           <button className="p-2 ml-4 button-primary-button text-[14px] rounded-lg hover:opacity-80 cursor-pointer">LOGIN</button>
-          <button className="p-2 ml-1 button-primary-button text-[14px] rounded-lg hover:opacity-80 cursor-pointer">GET STARTED</button>
+          <button className="p-2 ml-2 button-primary-button text-[14px] rounded-lg hover:opacity-80 cursor-pointer">GET STARTED</button>
           <button className="lg:hidden flex items-center justify-center p-2 cursor-pointer"  
              onClick={toggleMobileMenu} aria-label={isMobileMenuOpen ? "Close Mobile Menu" : "Open Mobile Menu"} aria-expanded={isMobileMenuOpen}>
               {isMobileMenuOpen ? <X size={32}/> : <Menu size={32}/>}
