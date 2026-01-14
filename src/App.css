@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --color-secondary-color: #101010;
+}
+
 :root {
   --bg-color: #ffffff;
   --text-color: #000000;
@@ -70,3 +74,23 @@ body {
   cursor: pointer;
 }
 
+@utility header-text {
+  font-family:"Inter", sans-serif;
+  font-size: 4rem;
+  color: var(--bg-text);
+  font-weight: normal;
+}
+
+@utility paragraph-text {
+  font-family:"Inter", sans-serif;
+  font-size: 1em;
+  color: var(--bg-text);
+  opacity: 0.6;
+}
+
+@utility pricing-text {
+  font-family: "Inter", sans-serif;
+  font-size: 0.75em;
+  color: var(--bg-text);
+  font-weight: 200;
+}

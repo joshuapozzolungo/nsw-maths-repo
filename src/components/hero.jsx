@@ -37,7 +37,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="flex flex-col sm:flex-row justify-center align-items-center mx-auto max-w-full max-w-screen-xl sm:px-7 lg:px-8">
+    <div className="flex flex-col sm:flex-row justify-left align-items-center mx-auto max-w-full max-w-screen-xl sm:px-7 lg:px-8">
       <div className="max-w-4xl mt-45">
         <div className="flex text-primary-text space-x-7 mb-6 opacity-60">
           <div className="max-w-md">
@@ -67,7 +67,7 @@ export default function Hero() {
           <button className="p-3 button-primary-button rounded-xl hover:opacity-80 cursor-pointer"> Get Cracked </button>
         </div>
       </div>
-      <div className="mt-37" ref={calculatorRef} style={{width: "600px", height: "400px"}}></div>
+      <div className="hidden mt-37" ref={calculatorRef} style={{width: "600px", height: "400px"}}></div>
     </div>
   
   );
