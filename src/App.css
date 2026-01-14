@@ -56,4 +56,17 @@ body {
 
 @theme {
   --color-secondary-box: #101010;
-} 
+}
+
+@utility footer-main-heading {
+  font-family: "Inter", sans-serif;
+}
+
+@utility footer-sub-heading {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: var(--bg-text);
+  opacity: 0.6;
+  cursor: pointer;
+}
+
