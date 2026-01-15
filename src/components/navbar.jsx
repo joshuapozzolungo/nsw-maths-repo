@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const DropDownMenuItem = ({heading, description}) => {
   return (
@@ -40,10 +41,10 @@ export default function NavBar({ toggleMobileMenu, isMobileMenuOpen }) {
               <DropDownMenuItem heading="TUTORING" description="Quality Exam Questions"/>
             </div>
           </div>
-          <a className="p-2 group transition duration-300 hover:text-yellow-500 cursor-pointer">CONTRIBUTE
+          <Link to="/contribute" className="p-2 group transition duration-300 hover:text-yellow-500 cursor-pointer">CONTRIBUTE
             <span class="block max-w-0 group-hover:max-w-full transition-all duration-400 h-0.5 bg-yellow-500"></span>
-          </a>
-          <a className="p-2 group transition duration-300 hover:text-yellow-500 cursor-pointer">PRICING
+          </Link>
+          <a href="#pricing" className="p-2 group transition duration-300 hover:text-yellow-500 cursor-pointer">PRICING
             <span class="block max-w-0 group-hover:max-w-full transition-all duration-400 h-0.5 bg-yellow-500"></span>
           </a>
           <a className="p-2 group transition duration-300 hover:text-yellow-500 cursor-pointer">LEADERBOARD
