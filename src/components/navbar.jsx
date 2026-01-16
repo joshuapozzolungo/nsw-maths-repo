@@ -24,7 +24,7 @@ export default function NavBar({ toggleMobileMenu, isMobileMenuOpen }) {
   return (
     <header className="sticky top-0 z-50 mx-auto min-h-16 w-full backdrop-blur-2xl pt-3 pb-3 ">
       <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 flex min-h-16 justify-between items-center rounded-full">
-        <a className="normal-text flex items-center gap-2 font-semibold text-text-primary duration-300 ease-in-out hover:opacity-80 text-[25px] cursor-pointer">HSC Maths Hub</a>
+        <Link to="/" className="normal-text flex items-center gap-2 font-semibold text-text-primary duration-300 ease-in-out hover:opacity-80 text-[25px] cursor-pointer">HSC Maths Hub</Link>
         <nav className="hidden nav-primary-text ml-auto items-center gap-3 lg:flex font-bold" aria-label="main-navigation">
           <div className="relative flex-col" onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
             <div className="flex justify-center items-center">
