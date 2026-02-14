@@ -3,17 +3,17 @@ import { CircleCheck, CircleX } from "lucide-react";
 
 export default function Compare() {
   
-  const headings = ["Features", "getcracked", "Neetcode", "Leetcode", "AlgoExpert"];
-  const rows = [{feature: "Personalised Tutoring", getCrackedHasFeature: true, NeetCodeHasFeature: false, LeetCodeHasFeature: false, AlgoExpertHasFeature: false},
-                {feature: "Personalised Tutoring", getCrackedHasFeature: true, NeetCodeHasFeature: false, LeetCodeHasFeature: false, AlgoExpertHasFeature: false},
-                {feature: "Personalised Tutoring", getCrackedHasFeature: true, NeetCodeHasFeature: false, LeetCodeHasFeature: false, AlgoExpertHasFeature: false},
-                {feature: "Personalised Tutoring", getCrackedHasFeature: true, NeetCodeHasFeature: false, LeetCodeHasFeature: false, AlgoExpertHasFeature: false},
-                {feature: "Personalised Tutoring", getCrackedHasFeature: true, NeetCodeHasFeature: false, LeetCodeHasFeature: false, AlgoExpertHasFeature: false},
-                {feature: "Personalised Tutoring", getCrackedHasFeature: true, NeetCodeHasFeature: false, LeetCodeHasFeature: false, AlgoExpertHasFeature: false},
-                {feature: "Personalised Tutoring", getCrackedHasFeature: true, NeetCodeHasFeature: false, LeetCodeHasFeature: false, AlgoExpertHasFeature: false},
-                {feature: "Personalised Tutoring", getCrackedHasFeature: true, NeetCodeHasFeature: false, LeetCodeHasFeature: false, AlgoExpertHasFeature: false},
-                {feature: "Personalised Tutoring", getCrackedHasFeature: true, NeetCodeHasFeature: false, LeetCodeHasFeature: false, AlgoExpertHasFeature: false},
-                {feature: "Personalised Tutoring", getCrackedHasFeature: true, NeetCodeHasFeature: false, LeetCodeHasFeature: false, AlgoExpertHasFeature: false}
+  const headings = ["Features", "HSC Maths Hub", "THSC", "Bored of Studies", "Studocu"];
+  const rows = [{feature: "Place Holder 1", getCrackedHasFeature: true, NeetCodeHasFeature: false, LeetCodeHasFeature: false, AlgoExpertHasFeature: false},
+                {feature: "Place Holder 2", getCrackedHasFeature: true, NeetCodeHasFeature: false, LeetCodeHasFeature: false, AlgoExpertHasFeature: false},
+                {feature: "Place Holder 3", getCrackedHasFeature: true, NeetCodeHasFeature: false, LeetCodeHasFeature: false, AlgoExpertHasFeature: false},
+                {feature: "Place Holder 4", getCrackedHasFeature: true, NeetCodeHasFeature: false, LeetCodeHasFeature: false, AlgoExpertHasFeature: false},
+                {feature: "Place Holder 5", getCrackedHasFeature: true, NeetCodeHasFeature: false, LeetCodeHasFeature: false, AlgoExpertHasFeature: false},
+                {feature: "Place Holder 6", getCrackedHasFeature: true, NeetCodeHasFeature: false, LeetCodeHasFeature: false, AlgoExpertHasFeature: false},
+                {feature: "Place Holder 7", getCrackedHasFeature: true, NeetCodeHasFeature: false, LeetCodeHasFeature: false, AlgoExpertHasFeature: false},
+                {feature: "Place Holder 8", getCrackedHasFeature: true, NeetCodeHasFeature: false, LeetCodeHasFeature: false, AlgoExpertHasFeature: false},
+                {feature: "Place Holder 9", getCrackedHasFeature: true, NeetCodeHasFeature: false, LeetCodeHasFeature: false, AlgoExpertHasFeature: false},
+                {feature: "Place Holder 10", getCrackedHasFeature: true, NeetCodeHasFeature: false, LeetCodeHasFeature: false, AlgoExpertHasFeature: false}
   ];
 
   const renderCell = (value) => {
@@ -36,11 +36,11 @@ export default function Compare() {
             <table className="w-full text-sm border-red-500">
               <thead>
                 <tr>
-                  {headings.map(heading => ( <th className="paragraph-text h-10 px-5 py-6 bg-secondary-color">{heading}</th>))}
+                  {headings.map(heading => ( <th className="paragraph-text h-10 px-5 py-6 bg-secondary">{heading}</th>))}
                 </tr>
               </thead>
               <tbody>
-                {rows.map(row => ( <tr className="paragraph-text h-10 px-5 py-6 bg-secondary-color border-t border-white/20">
+                {rows.map(row => ( <tr className="paragraph-text h-10 px-5 py-6 bg-secondary border-t border-white/20">
                   <td><div className="flex justify-center py-6">{row.feature}</div></td>
                   <td><div className="flex justify-center">{renderCell(row.getCrackedHasFeature)}</div></td>
                   <td><div className="flex justify-center">{renderCell(row.NeetCodeHasFeature)}</div></td>

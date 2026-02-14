@@ -26,12 +26,12 @@ export default function Footer() {
 
   return (
     <footer className="relative gap-x-4 my-20 px-4 mx-auto mb-4 h-auto min-h-[580px] 
-      rounded-xl md:min-h[550px] lg:mt-14 lg:mb-10 lg:min-h-[430px] bg-[#101010] lg:rounded-3xl w-[calc(100%-32px)] lg:w-[calc(100%-72px)]">
+      rounded-xl md:min-h[550px] lg:mt-14 lg:mb-10 lg:min-h-[430px] bg-secondary lg:rounded-3xl w-[calc(100%-32px)] lg:w-[calc(100%-72px)]">
       <div className="grid grid-cols-2 mx-auto min-h-[280px] md:min-h[250px] lg:min-h:[130px]">
         <div className="flex flex-col pt-10 px-15 space-y-10">
           <a className="font-bold text-2xl">HSC MATHS HUB</a>
           <p className="footer-sub-heading cursor-default">We seek to bridge the gap of the frustrating task of finding questions of specific topics scattered all over the place</p>
-          <div className="flex relative justify-between items-center w-45 h-10 rounded-full bg-black p-1">
+          <div className="flex relative justify-between items-center w-45 h-10 rounded-full bg-secondary/50 p-1">
             <motion.div 
               layoutId="active-pill" 
               className="absolute h-8 rounded-full bg-white/10 border-white/20"

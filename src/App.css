@@ -2,12 +2,12 @@
 @plugin "daisyui";
 
 @theme {
-  --color-secondary-color: #101010;
+  --color-secondary: var(--color-secondary);
 }
-
 :root {
   --bg-color: #ffffff;
   --text-color: #000000;
+  --color-secondary: #D3D3D3;
 }
 
 /* Dark Mode - Manual (via .dark class) or Auto (via Media Query) */
@@ -15,12 +15,14 @@
   :root:not(.light) {
     --bg-color: #000000;
     --text-color: #ffffff;
+    --color-secondary: #101010;
   }
 }
 
 .dark {
   --bg-color: #000000;
   --text-color: #ffffff;
+  --color-secondary: #101010;
 }
 
 html {

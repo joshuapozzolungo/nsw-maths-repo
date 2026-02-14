@@ -55,9 +55,9 @@ export default function Testimonials() {
         <Slider {...setting}>
           {testimonials.map((item) => (
             <div key={item.id} className="p-4 h-full">
-              <div className="flex flex-col gap-5 bg-secondary-color p-10 rounded-2xl h-full">
+              <div className="flex flex-col gap-5 p-10 rounded-2xl h-full bg-secondary ">
                 <div className="flex gap-3">
-                  <img className="h-14 w-14 Iv2Hbb" src={item.profileURL} alt="Profile photo"/>
+                  <img className="h-14 w-14 Iv2Hbb" src={item.profileURL} referrerPolicy="no-referrer" alt="Profile photo"/>
                   <div className="self-center">
                     <div className="text-white">{item.name}</div>
                     <div>⭐ ⭐ ⭐ ⭐ ⭐</div>
