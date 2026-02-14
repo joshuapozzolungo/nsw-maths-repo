@@ -52,5 +52,10 @@
   "bugs": {
     "url": "https://github.com/joshuapozzolungo/nsw-maths-repo/issues"
   },
-  "homepage": "https://github.com/joshuapozzolungo/nsw-maths-repo#readme"
+  "homepage": "https://github.com/joshuapozzolungo/nsw-maths-repo#readme",
+  "overrides": {
+    "react-latex-next": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+  }
 }
