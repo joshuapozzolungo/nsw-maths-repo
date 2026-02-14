@@ -57,5 +57,6 @@
     "react-latex-next": {
       "react": "$react",
       "react-dom": "$react-dom"
+    }
   }
 }
