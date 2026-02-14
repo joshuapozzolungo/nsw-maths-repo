@@ -4,7 +4,7 @@ import { CircleCheck } from "lucide-react";
 export default function Pricing() {
   
   return (
-    <section id="pricing" className="relative min-h-screen overflow-hidden">
+    <section id="pricing" className="relative min-h-screen overflow-hidden my-30">
       <div className="absolute inset-0">
         <div className="relative w-full py-24 space-y-24">
           <div className="mx-auto max-w-5xl space-y-6 text-center">

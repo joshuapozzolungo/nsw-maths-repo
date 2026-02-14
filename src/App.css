@@ -1,8 +1,6 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
-html {
-  scroll-behavior: smooth;
-}
 @theme {
   --color-secondary-color: #101010;
 }
@@ -25,9 +23,15 @@ html {
   --text-color: #ffffff;
 }
 
+html {
+  background-color: var(--bg-color);
+}
+
 /* Apply to the body */
 body {
   background-color: var(--bg-color);
+  min-height: 100vh;
+  margin: 0;
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -72,7 +76,7 @@ body {
 @utility footer-sub-heading {
   font-family: "Inter", sans-serif;
   font-size: 14px;
-  color: var(--bg-text);
+  color: var(--text-color);
   opacity: 0.6;
   cursor: pointer;
 }
@@ -80,7 +84,7 @@ body {
 @utility header-text {
   font-family:"Inter", sans-serif;
   font-size: 4rem;
-  color: var(--bg-text);
+  color: var(--text-color);
   font-weight: normal;
 }
 
@@ -94,6 +98,32 @@ body {
 @utility pricing-text {
   font-family: "Inter", sans-serif;
   font-size: 0.75em;
-  color: var(--bg-text);
+  color: var(--text-color);
   font-weight: 200;
+}
+
+/* Change the color of ALL dots */
+.slick-dots li button:before {
+  color: var(--text-color) !important;
+  opacity: 0.5; /* Inactive dots are usually semi-transparent */
+}
+
+/* Change the color of the ACTIVE dot only */
+.slick-dots li.slick-active button:before {
+  color: var(--text-color) !important;
+  opacity: 1; /* Make the current slide dot solid red */
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+  display: flex !important;
+}
+
+.slick-slide > div {
+  height: 100%;
+  width: 100%;
 }

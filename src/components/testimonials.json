@@ -1,0 +1,52 @@
+[   
+    {
+      "id" : 1,
+      "name" : "Clare Lamata",
+      "stars" : 5,
+      "profileURL" : "https://lh3.googleusercontent.com/a/ACg8ocLUTyhFSML108fN7JX5133S1mkkhzMlPJLah_vnYqeUYMUz_A=w144-h144-p-rp-mo-ba4-br100", 
+      "description" : "In a short period of time, Josh has not only helped my son with his Maths, significantly improving his marks, but has also positively influenced his attitude towards Maths. We have had tutors before that have not been able to relate to their younger audience, which makes such a difference, as Josh has been such a positive role model to him too. Cannot thank Josh enough."
+    },
+    {
+      "id" : 2,
+      "name" : "Tania Karshegan",
+      "stars" : 5,
+      "profileURL" : "https://lh3.googleusercontent.com/a-/ALV-UjUOsk6OFd-Gxm1ipnuKN2O8hG1dwnLSevJ6XbtaogjTxD-_pLAG=s72-c-rp-mo-br100",
+      "description" : "My daughters math skills have grown tremendously ever since we started sessions with Joshua at Tutor Victory. She is doing so well and has gained so much confidence in the subject. Joshua is extremely knowledgeable, patient, and professional. I’m truly grateful for the progress she has made. Highly recommended!"
+    },
+    {
+      "id" : 3,
+      "name" : "Melissa Mckibbons",
+      "stars" : 5,
+      "profileURL" : "https://lh3.googleusercontent.com/a/ACg8ocI1sEDfCPpdJWek8m6f6bHbO5yUhjPSM6-xN1b_iwfxErIhToo=s72-c-rp-mo-br100",
+      "description" : "Joshua has been wonderful in building our daughter’s confidence in primary mathematics.Although her teachers had recognised her talent, she was hesitant to extend herself and uncomfortable with making mistakes. After just one term with Joshua, her teacher has already reported a noticeable improvement in her confidence."
+    },    
+    {
+      "id" : 4,
+      "name" : "Shanae Heany",
+      "stars" : 5,
+      "profileURL" : "https://lh3.googleusercontent.com/a/ACg8ocL9N4DJciWAV3yBeXCefSiEwLv_AgANWMSyPiFD_ye4gcnB9A=s72-c-rp-mo-br100",
+      "description" : "Josh’s communication with my son is amazing. He has the ability to explain examples better than my son’s teachers. Highly recommend!"
+    },    
+    {
+      "id" : 5,
+      "name" : "Natasha SJ",
+      "stars" : 5,
+      "profileURL" : "https://lh3.googleusercontent.com/a/ACg8ocLjQxAUxBLqE0s5DKXhcSEBNkZvLzonzybng7X0GxXtDs92vA=s72-c-rp-mo-br100",
+      "description" : "Joshua has been an excellent help for our son in gaining confidence in his approach to do Math. Our son has developed a more positive attitude and better understanding of Math thanks to Joshua's detailed explanations, patience and positive encouragement."
+    },
+    {
+      "id" : 6,
+      "name" : "Felicia Gracias",
+      "stars" : 5,
+      "profileURL" : "https://lh3.googleusercontent.com/a-/ALV-UjXJWx87IV86FID-rO5aH1YrJ9bW_EZMIgt4ZKpVKxBt55oZq5r6=s72-c-rp-mo-br100",
+      "description" : "I would highly recommend Joshua for his tutoring skills and expertise.Very patient and approachable in explaining the techniques. The feedback after veey session helps diligently for parents to be updated on the child's progress. Joshua is an asset to anyone who can get tutored from him. Thanks Joshua !"
+    },
+    {
+      "id" : 7,
+      "name" : "Sezen Urbina",
+      "stars" : 5,
+      "profileURL" : "https://lh3.googleusercontent.com/a/ACg8ocIf-n7-84BZyA7nJt3wCPyvaTZnLVb63G22Cwt4ry8KxSIGoQ=s72-c-rp-mo-br100",
+      "description" : "Josh has been fantastic in helping my son in Year 7 not only with his maths but general studying principles as well. He’s smart, organised and provides homework and support outside of tutoring hours as well."
+    }
+]
+
