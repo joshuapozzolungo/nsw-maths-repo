@@ -81,11 +81,6 @@ export default function Pricing() {
                 </ul>
               </div>
             </div>
-
-
-
-
-            <div className="h-[50vh] rounded-3xl bg-yellow-500/50">Pricing2</div>
           </div>
         </div>
       </div>

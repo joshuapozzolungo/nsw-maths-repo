@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const DropDownMenuItem = ({heading, description}) => {
   return (
-    <div className="flex justify-start items-center space-x-2 p-2 m-1 hover:bg-secondary-box hover:border-1 hover:border-white/20 hover:rounded-lg hover:border-dashed cursor-pointer">
+    <div className="flex justify-start items-center space-x-2 p-2 m-1 hover:bg-secondary hover:border-1 hover:border-white/20 hover:rounded-lg hover:border-dashed cursor-pointer">
       <div className="flex justify-center items-center h-[45px] w-[45px] border-1 border-white/20 rounded-lg ">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-files-icon lucide-files"><path d="M15 2h-4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8"/><path d="M16.706 2.706A2.4 2.4 0 0 0 15 2v5a1 1 0 0 0 1 1h5a2.4 2.4 0 0 0-.706-1.706z"/><path d="M5 7a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h8a2 2 0 0 0 1.732-1"/></svg>
       </div>
@@ -33,7 +33,7 @@ export default function NavBar({ toggleMobileMenu, isMobileMenuOpen }) {
               </button>
               <ChevronDown className={`transition-transform duration-300 ${isHovering ? 'rotate-180' : 'rotate-0'}`}/>
             </div>
-            <div className={`${isHovering ? '' : 'hidden'} absolute bg-black top-full left-1/2 -translate-x-1/2 p-2 grid grid-cols-2 h-63 w-135 border-1 border-white/20 rounded-lg`}>
+            <div className={`${isHovering ? '' : 'hidden'} absolute bg-secondary top-full left-1/2 -translate-x-1/2 p-2 grid grid-cols-2 h-63 w-135 border-1 border-white/20 rounded-lg`}>
               <DropDownMenuItem heading="QUESTIONS" description="Quality Exam Questions"/>
               <DropDownMenuItem heading="EXERCISE" description="Quality Exam Questions"/>
               <DropDownMenuItem heading="VIDEOS" description="Quality Exam Questions"/>

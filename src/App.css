@@ -2,6 +2,7 @@
 @plugin "daisyui";
 
 @theme {
+  --color-primary: var(--bg-color)
   --color-secondary: var(--color-secondary);
 }
 :root {
